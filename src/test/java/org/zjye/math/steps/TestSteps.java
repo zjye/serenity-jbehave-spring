@@ -6,9 +6,11 @@ import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.SpringApplicationConfiguration;
-import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
-import org.zjye.math.*;
+import org.zjye.math.ApplicationService;
+import org.zjye.math.ApplicationToTest;
+import org.zjye.math.ScenarioConfig;
+import org.zjye.math.ScenarioContext;
 
 
 @Component
@@ -17,8 +19,6 @@ public class TestSteps {
 
     @Autowired
     ScenarioContext scenarioContext;
-    @Autowired
-    private ApplicationContext applicationContext;
     @Autowired
     ApplicationService applicationService;
 
@@ -32,7 +32,6 @@ public class TestSteps {
     @When("I multiply x by $value")
     public void whenImultiplyXBy(@Named("value") int value) {
         int x = scenarioContext.get("x");
-
         result = applicationService.multiply(x, value);
     }
 
