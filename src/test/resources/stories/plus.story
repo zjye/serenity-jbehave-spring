@@ -1,4 +1,4 @@
-Meta: Calculator plus
+Feature: Calculator plus
 
 Narrative:
 As a user
