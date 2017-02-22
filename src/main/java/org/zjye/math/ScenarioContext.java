@@ -9,7 +9,7 @@ public class ScenarioContext {
     private final ConcurrentMap<String, Object> data = new ConcurrentHashMap();
 
     @PostConstruct
-    public void resetTrades(){
+    public void reset(){
         data.clear();
     }
 

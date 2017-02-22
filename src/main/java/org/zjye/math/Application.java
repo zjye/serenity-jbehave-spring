@@ -5,10 +5,10 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 
 
 @SpringBootApplication
-public class ApplicationToTest {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplicationBuilder builder = new SpringApplicationBuilder(ApplicationToTest.class);
+        SpringApplicationBuilder builder = new SpringApplicationBuilder(Application.class);
         builder.headless(false).run(args);
     }
 
