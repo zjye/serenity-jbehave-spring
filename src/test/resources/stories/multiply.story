@@ -1,8 +1,8 @@
-Feature: calculator
+Feature: Calculator multiply
 
 Narrative:
 As a user
-I want to perform an action
+I want to multiply a value
 So that I can achieve a business goal
 
 Scenario: calculate 2 squared
